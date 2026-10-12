@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Moonletter</title>
+  <defs>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ef91bd"/>
+      <stop offset="1" stop-color="#bc3c7c"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fffdfd"/>
+      <stop offset="1" stop-color="#ffeaf3"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#rose)"/>
+  <path d="M41.6 9.5a11.2 11.2 0 1 0 10.8 16.3A11.8 11.8 0 0 1 41.6 9.5Z" fill="#fff8e8"/>
+  <path d="m17 10 1.8 5.2L24 17l-5.2 1.8L17 24l-1.8-5.2L10 17l5.2-1.8Z" fill="#fff8e8"/>
+  <rect x="10" y="28" width="44" height="27" rx="5" fill="#942f68" opacity=".2"/>
+  <rect x="10" y="25" width="44" height="27" rx="5" fill="url(#paper)"/>
+  <path d="m11 28 21 15 21-15" fill="none" stroke="#df8cb2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m11 49 15-12m27 12L38 37" fill="none" stroke="#e7a8c5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M32 39.4c-2.3-3.3-7.2-1.4-7.2 2.3 0 3.1 4.5 5.8 7.2 7.7 2.7-1.9 7.2-4.6 7.2-7.7 0-3.7-4.9-5.6-7.2-2.3Z" fill="#c94a87"/>
+</svg>

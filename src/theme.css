@@ -5,7 +5,9 @@ body{background:#fffafd}
 :focus-visible{outline-color:#b93579}
 .topbar{background:#fffafd}
 .brand{color:#5a2648}
-.brand-mark{background:#f8c9dd;color:#9e356a;box-shadow:0 0 0 5px #fce9f2;animation:markTwinkle 4.5s ease-in-out infinite}
+.brand-mark{width:40px;height:40px;border-radius:12px;background:none;box-shadow:0 0 0 4px #fce9f2,0 5px 12px #c8548a30;animation:markTwinkle 5s ease-in-out infinite}
+.brand-mark img{display:block;width:40px;height:40px;border-radius:12px}
+.brand:hover .brand-mark{box-shadow:0 0 0 5px #f6d0e2,0 8px 20px #c8548a50}
 .nav a:hover,.footer a:hover{color:#c04482}
 .nav-cta,.btn-primary{background:linear-gradient(135deg,#e66a9f,#c84783);color:#fff;box-shadow:0 7px 0 #a3336d,0 14px 22px #dc73a445}
 .nav-cta:hover,.btn-primary:hover{background:linear-gradient(135deg,#ec7cab,#bd3478)}
