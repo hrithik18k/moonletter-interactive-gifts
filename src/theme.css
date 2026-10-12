@@ -1,0 +1,118 @@
+/* Moonletter's rose and pearl visual refresh. */
+:root{color:#47243b;background:#fffafd}
+body{background:#fffafd}
+::selection{background:#f7bfd8;color:#5b2245}
+:focus-visible{outline-color:#b93579}
+.topbar{background:#fffafd}
+.brand{color:#5a2648}
+.brand-mark{background:#f8c9dd;color:#9e356a;box-shadow:0 0 0 5px #fce9f2;animation:markTwinkle 4.5s ease-in-out infinite}
+.nav a:hover,.footer a:hover{color:#c04482}
+.nav-cta,.btn-primary{background:linear-gradient(135deg,#e66a9f,#c84783);color:#fff;box-shadow:0 7px 0 #a3336d,0 14px 22px #dc73a445}
+.nav-cta:hover,.btn-primary:hover{background:linear-gradient(135deg,#ec7cab,#bd3478)}
+.btn-secondary{border-color:#b35783;color:#8c3265;background:#fff9fc}
+.btn-light{background:#fff8fc;color:#81355f}
+.btn{transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s ease,background .28s ease}
+.btn:hover,.nav-cta:hover{transform:translateY(-4px) scale(1.02)}
+.btn:active,.nav-cta:active{transform:translateY(1px) scale(.98)}
+.hero{background:radial-gradient(circle at 82% 24%,#f8d0e2 0,transparent 30%),radial-gradient(circle at 10% 88%,#ffe8f2 0,transparent 30%),linear-gradient(135deg,#fff9fc,#ffeef5 55%,#fff7fa);color:#592947}
+.hero:before,.hero:after{content:'✦';position:absolute;color:#d45490;opacity:.38;font-size:34px;animation:twinkle 3.5s ease-in-out infinite;pointer-events:none}
+.hero:before{left:4%;top:19%}.hero:after{right:5%;bottom:12%;animation-delay:1.6s}
+.hero .eyebrow{color:#a13570}
+.hero h1{animation:formRise .75s .06s both}
+.hero p{animation:formRise .75s .18s both}
+.hero-actions{animation:formRise .75s .3s both}
+.hero h1 em{color:#c04380}
+.hero p{color:#715468}
+.hero-note{color:#8a6a7d!important}
+.orbit,.orbit:before,.orbit:after{border-color:#dea4c0}
+.orbit{animation:orbitBreath 9s ease-in-out infinite}
+.moon{background:#fffdfa;box-shadow:0 0 0 18px #fff9fc65,0 0 85px #d777a899;animation:moonFloat 5s ease-in-out infinite}
+.art-card{background:#fffdfc;color:#632c4b;border-color:#fff;box-shadow:20px 25px 0 #ee91ba,32px 40px 50px #a83d7850;animation:cardSway 7s ease-in-out infinite}
+.art-card:before{color:#d66a9f}
+.art-card p{color:#855974}
+.art-card .seal{background:linear-gradient(145deg,#eb7fab,#c94380);box-shadow:0 7px 18px #ba548f4d;animation:sealPulse 3.5s ease-in-out infinite}
+.spark{color:#d85892;animation:twinkle 2.7s ease-in-out infinite}
+.spark.two{animation-delay:1.4s}
+.ticker{background:#f9cade;color:#793758}
+.ticker b{color:#c04482}
+.section{background:#fffafd}
+.section-title{color:#5d294a}
+.section-copy{color:#795b6e}
+.occasion-card{border:1px solid #ffffffcc;box-shadow:0 9px 28px #a64d7b13;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s ease}
+.occasion-card:after{content:'✦';position:absolute;right:25px;top:25px;color:#a73b73;font-size:20px;opacity:.4;transition:transform .35s,opacity .35s}
+.occasion-card:hover{transform:translateY(-10px) rotate(-1deg);box-shadow:0 25px 38px #a64d7b29}
+.occasion-card:hover:after{transform:rotate(90deg) scale(1.3);opacity:.8}
+.occasion-card .illustration{filter:drop-shadow(9px 12px 0 #b7689040);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.occasion-card:hover .illustration{transform:translateY(-9px) rotate(7deg) scale(1.08)}
+.occasion-card .badge{background:#fffafce3;color:#8c3569}
+.bg-peach{background:linear-gradient(145deg,#ffe0e9,#ffd4e2)}
+.bg-gold{background:linear-gradient(145deg,#ffeced,#fbd6e0)}
+.bg-lilac{background:linear-gradient(145deg,#f3e3f8,#ead7f4)}
+.bg-blue{background:linear-gradient(145deg,#fce9f2,#efdced)}
+.bg-rose{background:linear-gradient(145deg,#ffd8e7,#f9c4d8)}
+.bg-green{background:linear-gradient(145deg,#fff0f5,#f4dce9)}
+.how{background:linear-gradient(180deg,#fff1f7,#fffafd)}
+.step{border-color:#eabbd1;transition:transform .3s}
+.step:hover{transform:translateY(-7px)}
+.step-num{color:#bb427d}
+.step-icon{display:inline-block;transition:transform .4s}
+.step:hover .step-icon{transform:rotate(-11deg) scale(1.16)}
+.step p{color:#795b6e}
+.demo-section{background:radial-gradient(circle at 0 100%,#ecb7d1 0,transparent 30%),linear-gradient(135deg,#f9dce9,#f5cbdc);color:#5d294a}
+.demo-wrap p{color:#755166}
+.demo-card{background:#fffdfc;color:#632c4b;box-shadow:16px 20px 0 #e788af;animation:demoSway 8s ease-in-out infinite}
+.demo-card p{color:#845b73}
+.faq-item{border-color:#f0d4e2}
+.faq-item p{color:#76586c}
+.faq-item summary:hover{color:#b83e7b}
+.cta-band{background:radial-gradient(circle at 20% 0,#f6b2d0,transparent 40%),linear-gradient(135deg,#d65b94,#b63c7a);color:#fff}
+.footer{background:#713653;color:#fff5fa}
+.footer p{color:#f4d7e5}
+.footer a{color:#ffe9f2}
+.footer-bottom{border-color:#aa7190;color:#f1cddd}
+.footer .brand{color:#fff}
+.builder-wrap{background:radial-gradient(circle at 100% 0,#fce4ef,transparent 38%),#fffafd}
+.builder h1,.simple-page h1{color:#5d294a}
+.builder .intro,.simple-page p{color:#795b6e}
+.progress span{background:#f2d6e3;transition:background .3s}
+.progress span.active{background:#d15a92}
+.form-card,.history-item{background:#fff;border-color:#f1d8e3;box-shadow:0 18px 55px #b75d8720;animation:formRise .42s both}
+.field input,.field textarea,.field select{border-color:#e7c9d9;color:#582b48;background:#fffdfd}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:#d15a92;box-shadow:0 0 0 3px #fbe2ee}
+.choice{background:#fff5fa;border-color:#ebc9d9;color:#80415f;transition:transform .2s,background .2s}
+.choice:hover{transform:translateY(-2px);background:#fbe3ee}
+.choice.selected{background:#b64079;border-color:#b64079;color:white}
+.hint{background:#fff0f6;border-color:#d15a92;color:#77415e}
+.upload{background:#fff8fb;border-color:#e6b7cd;transition:background .25s,transform .25s}
+.upload:hover{background:#ffeaf3;transform:translateY(-3px)}
+.preview-box{background:radial-gradient(circle at 50% 10%,#fbe0ed,#d879a6);color:#fff}
+.preview-box .emoji{animation:float 3s ease-in-out infinite}
+.link-box input{border-color:#e4c5d4}
+.link-box button,.remove{background:#a73e75}
+.gift{background:radial-gradient(circle at 80% 20%,#f4a9ca 0,transparent 32%),radial-gradient(circle at 18% 82%,#f8d5e6 0,transparent 34%),linear-gradient(140deg,#a33e73,#ce699b 50%,#bd4e85);color:#fff9fc}
+.gift:before,.gift:after{position:fixed;content:'✦';color:#fff;opacity:.34;pointer-events:none;animation:twinkle 4s ease-in-out infinite}
+.gift:before{left:8%;top:20%;font-size:36px}.gift:after{right:10%;bottom:15%;font-size:52px;animation-delay:1.5s}
+.gift-kicker{color:#ffe5f1}
+.gift-note{background:#fffdfc;color:#682f51;box-shadow:10px 10px 0 #f4adce;animation:noteOpen .65s both}
+.gift-photo{border-color:#fff;box-shadow:12px 12px 0 #f4adce;animation:photoOpen .7s both}
+.gift-back{color:#fff}
+.gift-counter{color:#ffe4ef}
+.gift .emoji{filter:drop-shadow(0 12px 12px #8d2d6655)}
+.history-item:hover{transform:translateY(-3px);box-shadow:0 20px 35px #b75d872b}
+.toast{background:#8d3568;color:#fff}
+.legal p,.legal li{color:#795b6e}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.2,1)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+@keyframes markTwinkle{50%{transform:rotate(14deg) scale(1.08)}}
+@keyframes twinkle{50%{opacity:.95;transform:scale(1.28) rotate(18deg)}}
+@keyframes orbitBreath{50%{transform:scale(1.04) rotate(7deg);opacity:.8}}
+@keyframes moonFloat{50%{transform:translateY(-15px)}}
+@keyframes cardSway{50%{transform:rotate(-3deg) translateY(-10px)}}
+@keyframes sealPulse{50%{transform:scale(1.1);box-shadow:0 8px 25px #ba548f77}}
+@keyframes demoSway{50%{transform:rotate(1deg) translateY(-7px)}}
+@keyframes formRise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+@keyframes noteOpen{from{opacity:0;transform:rotate(-5deg) scale(.88) translateY(25px)}to{opacity:1;transform:rotate(-1deg) scale(1) translateY(0)}}
+@keyframes photoOpen{from{opacity:0;transform:rotate(7deg) scale(.85)}to{opacity:1;transform:rotate(-3deg) scale(1)}}
+@media(max-width:850px){.nav.open{background:#fff9fc}}
+@media(max-width:600px){.art-card{box-shadow:12px 15px 0 #ee91ba,23px 25px 30px #a83d7850}.hero:before{left:3%;top:7%}.hero:after{right:3%;bottom:5%}.gift-note p{font-size:23px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
